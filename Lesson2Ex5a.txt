@@ -1,0 +1,14 @@
+import random
+my_randoms=[]
+for i in range(10):
+    my_randoms.append(random.randrange(1,100,1))
+a=set(my_randoms)
+
+for i in range(12):
+    my_randoms.append(random.randrange(1,20,1))
+b=set(my_randoms)	
+
+print(a)
+print(b)
+Lista=list(a&b)
+print(Lista)
