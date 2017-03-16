@@ -1,6 +1,9 @@
+#Ask the user for a string and print out whether this string is a palindrome or not. 
+#(A palindrome is a string that reads the same forwards and backwards.)
+
 List1=(input("Inserisci Stringa: "))
-l1=[i for i in List1 if not (i == " ")]
-l2=l1[::-1]
+l1=[i for i in List1 if not (i == " ")]#elimino spazi dalla frase
+l2=l1[::-1]#inverto lista
 if l1==l2:
     print(List1 + " è Palindroma")
 else:  
